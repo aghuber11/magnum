@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Join Magnum</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .spooderDickBG {
+        background-image: url("spooder.jpg");
+        background-repeat: repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        outline: 1px solid red;
+      }
+      .WWD {
+        background-image: url('WWD.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .WWD p {
+        font-size: 50px;
+        font-weight: 900;
+      }
+      .WWD a {
+        text-decoration: none;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="spooderDickBG">
+      <div class="WWD">
+        <a id="flash" href="https://discord.gg/GDN6wkd"><p>JOIN MAGNUM</p></a>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+      console.log(color)
+    }
+
+    function setRandomColor() {
+      var element = document.getElementById("flash");
+      console.log(element)
+      element.style.color = getRandomColor();
+    }
+
+    setInterval(function(){
+        setRandomColor()
+    }, 100);
+
+  </script>
+</html>
